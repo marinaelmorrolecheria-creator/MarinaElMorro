@@ -11,6 +11,7 @@
 html { scroll-behavior: smooth; }
 body { font-family: var(--fuente-cuerpo); background-color: var(--blanco); color: var(--azul-oscuro); overflow-x: hidden; }
 
+/* Navbar */
 .navbar { display: flex; justify-content: space-between; align-items: center; padding: 10px 8%; background-color: var(--azul-oscuro); position: fixed; width: 100%; z-index: 1000; }
 .logo { display: flex; align-items: center; gap: 15px; }
 .nav-logo-img { height: 50px; width: auto; }
@@ -19,16 +20,19 @@ body { font-family: var(--fuente-cuerpo); background-color: var(--blanco); color
 .nav-links li a { color: var(--blanco); text-decoration: none; margin: 0 15px; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; }
 .btn-cta { background-color: var(--azul-real); padding: 10px 20px; border-radius: 2px; text-decoration: none; color: white; }
 
+/* Hero */
 .hero { height: 100vh; background: url('https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&q=80') center/cover no-repeat; display: flex; align-items: center; justify-content: center; position: relative; color: var(--blanco); text-align: center; }
 .hero-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(3, 12, 54, 0.65); }
 .hero-content { position: relative; z-index: 1; padding: 0 20px; }
 .hero-logo-img { width: 150px; margin-bottom: 20px; filter: drop-shadow(0 0 10px rgba(0,0,0,0.5)); }
 .hero h1 { font-family: var(--fuente-logo); font-size: 3.5rem; letter-spacing: 5px; margin-bottom: 20px; }
 
+/* Botones */
 .btn-primary, .btn-secondary { padding: 15px 35px; text-decoration: none; text-transform: uppercase; font-weight: 600; margin: 10px; display: inline-block; font-size: 0.9rem; transition: 0.3s; }
 .btn-primary { background-color: var(--azul-real); color: var(--blanco); }
 .btn-secondary { border: 2px solid var(--blanco); color: var(--blanco); }
 
+/* Secciones */
 .section-padding { padding: 100px 10%; }
 .bg-light { background-color: #f9f9f9; }
 .container { max-width: 1200px; margin: 0 auto; }
@@ -37,20 +41,19 @@ body { font-family: var(--fuente-cuerpo); background-color: var(--blanco); color
 h2 { font-family: var(--fuente-logo); font-size: 2.2rem; margin-top: 10px; }
 .main-description { max-width: 850px; margin: 20px auto 0; font-size: 1.05rem; color: #444; }
 
-.mision-vision-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 50px; }
-.mv-card { background: var(--blanco); padding: 50px 45px; border: 1px solid var(--gris-claro); text-align: center; }
-.mv-title { font-family: var(--fuente-logo); font-size: 2rem; color: var(--azul-real); margin-bottom: 20px; text-transform: uppercase; }
-
+/* Tarjetas */
 .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
 .service-item { background: var(--blanco); padding: 35px; border-bottom: 5px solid var(--azul-real); box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: 0.3s; text-align: left; }
 .service-item:hover { transform: translateY(-5px); box-shadow: 0 15px 35px rgba(11, 29, 111, 0.1); }
 .service-item h4 { font-family: var(--fuente-logo); color: var(--azul-oscuro); margin-bottom: 15px; text-transform: uppercase; font-size: 1.1rem; }
 .service-item p { font-size: 0.95rem; line-height: 1.6; color: #555; }
 
-.projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
-.project-card { background-color: var(--azul-oscuro); color: var(--blanco); padding: 40px; border-left: 5px solid var(--azul-real); }
-.project-card h3 { font-family: var(--fuente-logo); font-size: 1.2rem; margin-bottom: 15px; text-transform: uppercase; }
+/* Estilos de Imagen en Gestión */
+.img-container { width: 100%; height: 200px; overflow: hidden; margin-bottom: 20px; border-radius: 2px; }
+.img-mejoras { width: 100%; height: 100%; object-fit: cover; transition: 0.5s; }
+.item-gestion:hover .img-mejoras { transform: scale(1.1); }
 
+/* Flotantes */
 .social-floating { position: fixed; bottom: 25px; right: 25px; display: flex; flex-direction: column; gap: 15px; z-index: 2000; }
 .float-btn { width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(0,0,0,0.25); transition: 0.3s; }
 .float-btn img { width: 35px; height: 35px; }
