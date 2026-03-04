@@ -36,12 +36,28 @@ body { font-family: var(--fuente-cuerpo); background-color: var(--blanco); color
 h2 { font-family: var(--fuente-logo); font-size: 2.2rem; margin-top: 10px; }
 .main-description { max-width: 850px; margin: 20px auto 0; font-size: 1.05rem; color: #444; }
 
-/* Misión/Visión - 2 Columnas */
-.mision-vision-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 50px; }
-.mv-card { background: var(--blanco); padding: 50px 45px; border: 1px solid var(--gris-claro); text-align: center; }
-.mv-title { font-family: var(--fuente-logo); font-size: 2rem; color: var(--azul-real); margin-bottom: 20px; text-transform: uppercase; }
+/* Misión/Visión - REFORZADO 2 COLUMNAS */
+.mision-vision-grid { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 30px; 
+    margin-top: 50px; 
+}
+.mv-card { 
+    background: var(--blanco); 
+    padding: 50px 45px; 
+    border: 1px solid var(--gris-claro); 
+    text-align: center; 
+}
+.mv-title { 
+    font-family: var(--fuente-logo); 
+    font-size: 2rem; 
+    color: var(--azul-real); 
+    margin-bottom: 20px; 
+    text-transform: uppercase; 
+}
 
-/* Cuadrículas Generales (Usadas en Servicios, Gestión, Normas y Proyectos) */
+/* Cuadrículas de Cuadros */
 .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
 .service-item { background: var(--blanco); padding: 35px; border-bottom: 5px solid var(--azul-real); box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: 0.3s; text-align: left; }
 .service-item:hover { transform: translateY(-5px); box-shadow: 0 15px 35px rgba(11, 29, 111, 0.1); }
@@ -52,7 +68,7 @@ h2 { font-family: var(--fuente-logo); font-size: 2.2rem; margin-top: 10px; }
 .img-container { width: 100%; height: 200px; overflow: hidden; margin-bottom: 20px; border-radius: 2px; }
 .img-mejoras { width: 100%; height: 100%; object-fit: cover; transition: 0.5s; }
 
-/* Botones Flotantes */
+/* Flotantes */
 .social-floating { position: fixed; bottom: 25px; right: 25px; display: flex; flex-direction: column; gap: 15px; z-index: 2000; }
 .float-btn { width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(0,0,0,0.25); transition: 0.3s; }
 .float-btn img { width: 35px; height: 35px; }
